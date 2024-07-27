@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación de Nuestra Tienda</title>
+    <style>
+        #ubicacion-tienda {
+            padding: 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        #ubicacion-tienda h2 {
+            margin-bottom: 20px;
+        }
+
+        #map {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        .detalles-direccion {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var ubicacionTienda = {lat: -33.8688, lng: 151.2093}; // Coordenadas de ejemplo
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: ubicacionTienda
+            });
+
+            var marker = new google.maps.Marker({
+                position: ubicacionTienda,
+                map: map,
+                title: 'Nuestra Tienda'
+            });
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: '<h3>Nuestra Tienda</h3><p>Calle Falsa 123, Ciudad, País</p>'
+            });
+
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
+</head>
+<body>
+    <section id="ubicacion-tienda">
+        <h2>Visítanos en nuestra tienda física</h2>
+        <div id="map"></div>
+        <div class="detalles-direccion">
+            <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad, País</p>
+            <p><strong>Teléfono:</strong> +123 456 789</p>
+            <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </div>
+    </section>
+</body>
+</html>

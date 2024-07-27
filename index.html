@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de navegación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <!--<ion-icon name="tv-outline"></ion-icon>-->
+                <span>INNOVATEC.PE</span>
+                <div class="categoria">
+                    <ion-icon id="btn-categoria" name="menu"></ion-icon>
+                    <span> Categoria</span>
+                </div>        
+            </div>
+            <div class="buscador">
+                <div class="search">     
+                    <input type="text" maxlength="100">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="menu-opciones">
+                <ul>    
+                    <li>
+                        <ion-icon name="home-outline"></ion-icon>
+                        <a id="home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <ion-icon name="basket"></ion-icon>
+                        <a href="#">Compras</a>
+
+                    </li>
+                    <li>
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <a href="sesion.html">Iniciar Sesion</a>
+
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="controles-usuario">
+                <ion-icon id="btn-menu" name="menu"></ion-icon>
+                <button id="btn-sign-up">SIGN UP</button>
+            </div>
+        </div>
+    </header>
+    
+    <div id="side-menu" class="side-menu">
+        <div class="side-menu-content">
+            <div class="side-menu-header">
+                <span> INNOVATEC.PE</span>
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="side-menu-item side-cuenta">
+                <div class="slide-menu-title">
+                  
+                    <span>Cuenta</span>
+                    <ion-icon name="chevron-down-circle-outline" id="close-icon"></ion-icon>
+
+                </div>
+               <hr>
+                <div class="subcategories">
+                    <div class="div"><a href="index.html" > Home</a></div>
+                    <div class="div"><a href="" > Compras</a> </div>  
+                    <div class="div"><a href="" > Favoritos</a> </div>
+                    <div class="div"><a href="sesion.html" > Registrate</a></div>
+                </div>
+            </div>
+            <div class="side-menu-item side-categoria">
+                
+                <div class="slide-menu-title">
+                  
+                    <span>Categorias</span>
+                    <ion-icon name="chevron-down-circle-outline"></ion-icon>
+
+                </div>
+                <hr>
+                <div class="subcategories">
+                  
+                    <div class="div"><a href="productos.html" >Monitores</a> </div>
+                    <div class="div"><a href="laptop-gamer.html" > Laptopss Gamers</a></div>
+                    <div class="div"><a href="notebooks.html" >Laptops y notebooks</a> </div>
+                    <div class="div"><a href="computadoras.html" > Pc de Escritorios </a></div>
+                    <div class="div"><a href="impresoras.html" >Impresoras y multifuncionales</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-menu-item side-contactos">
+                
+                <div class="slide-menu-title">
+                  
+                    <span>Contactos</span>
+                    <ion-icon name="chevron-down-circle-outline"></ion-icon>
+
+                </div>
+                <hr>
+                <div class="subcategories">
+                    <div class="div">subacagetorias </div>
+                    <div class="div">subacagetorias </div>
+                    <div class="div">subacagetorias </div>
+                    <div class="div">subacagetorias </div>
+                    <div class="div">subacagetorias </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- slidder fondo -->
+        <section id="hero">
+            <div class="container">
+
+                <div class="slider">
+        
+                    <input type="radio" name="slider" id="slideOne" checked>
+                    <input type="radio" name="slider" id="slideTwo">
+                    <input type="radio" name="slider" id="slideThree">
+        
+                    <div class="buttons">
+                        <label for="slideOne"></label>
+                        <label for="slideTwo"></label>
+                        <label for="slideThree"></label>
+                    </div>
+                    <div class="nav-buttons">
+                        <button id="prev">&#10094;</button>
+                        <button id="next">&#10095;</button>
+                    </div>
+                    <div class="content">
+                        <div class="firstslide">
+                        <div class="imagen-carrosel"></div>
+                            
+                            
+                        </div>
+                        <div class="secondslide">></div>
+                        <div class="thirdslide"></div>
+                    </div>       
+                </div>     
+            </div>
+         </section >
+         <!-- descuentos -->
+       <!--<section id="descuento">
+        <div class="container">
+            <div class="descuentos">
+                <div class="cartas">
+                        <h4> descuentos de pc</h4>
+                        <div class="imagenes">
+                            <img src="imagenes/ASUS-2.png" alt="Imagen 1">
+                            <img src="imagenes/LAPTOP-HP.png" alt="Imagen 2">
+                        </div>
+                </div>
+                <div class="cartas">
+                 <h4> descuentos de lactocs </h4>
+                 <div class="imagenes">
+                    <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 1">
+                    <img src="imagenes/LAPTOP-LENOVO.png" alt="Imagen 2">
+                </div>
+                </div>
+                <div class="cartas">
+                    <h4> descuentos de bañeras </h4>
+                    <div class="imagenes">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 1">
+                        <img src="imagenes/LAPTOP-LENOVO-3.png" alt="Imagen 2">
+                    </div>
+                </div>
+                <div class="cartas">
+                    <h4> descuentos de pisos </h4>
+                    <div class="imagenes">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 1">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 2">
+                    </div>
+                </div>
+                <div class="cartas">
+                    <h4> descuentos de porcelana </h4>
+                    <div class="imagenes">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 1">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 2">
+                    </div>
+                </div>
+                <div class="cartas">
+                    <h4> descuentos de caracoles </h4>
+                    <div class="imagenes">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 1">
+                        <img src="imagenes/LAPTOP-LENOVO-2.png" alt="Imagen 2">
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+       </section>-->
+       <!--ofertas -->
+       <h3 class="oferta-title"> Ofertas-Diciembre </h3>
+      <section id="ofertas">
+    
+        
+            <div class="ofertas-item one"></div>
+            <div class="ofertas-item two"></div>
+            <div class="ofertas-item three"></div>
+            <div class="ofertas-item four"></div>
+            <div class="ofertas-item five"></div>
+            <div class="ofertas-item six"></div>
+      </section>
+      <div id="tren-ofertas">
+        <span id="text"> TODOS LOS PRODUCTOS CON UN 50% DE DESCUENTOS POR NAVIDAD !!! NO TE LO PIERDAS SOLO POR ESTE MES </span>
+       </div>
+       <!--impresoras -->
+       <section id="categorias-1" >
+        <div class="titulo">
+            <a href="impresoras.html"><h3> Categoria : Impresoras  </h3></a>
+            <img src="/imagenes/icono-1.png" alt="impresora">
+        </div>
+        <div class="carousel-container">
+            <div class="carousel impresora">
+                <div class="card active impresora">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 1">
+                    <h2>Epson </h2>
+                    <div class="text-container">
+                        <p>Impresora Epson 4645-T </p>
+                    </div>
+                   
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 2">
+                    <h2>WORFORCE</h2>
+                    <div class="text-container">
+                        <p>impresora WORKFORCE 345-Tank color negro
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Epson</h2>
+                    <div class="text-container">
+                        <p>Impresora multifuncionales Brother DCPT420</p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Canon</h2>
+                    <div class="text-container">
+                        <p>Impresora Canon multifuncinal DCP-T40D</p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Epson</h2>
+                    <div class="text-container">
+                        <p>Impresora Canon multifuncinal DCP-T40D</p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Toshiba</h2>
+                    <div class="text-container">
+                        <p>Impresora Canon multifuncinal DCP-T40D</p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Epson</h2>
+                    <div class="text-container">
+                        <p>Impresora Canon multifuncinal DCP-T40D</p>
+                    </div>
+                </div>
+                <div class="card impresora ">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>HP</h2>
+                    <div class="text-container">
+                        <p>Impresora Canon multifuncinal DCP-T40D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-1">
+                <button class="button" onclick="prevCard()">&#10094;</button>
+                <button class="button" onclick="nextCard()">&#10095;</button>
+            </div>
+        </div>
+       </section>
+      <!-- computadoras -->
+       <section id="categorias-1">
+        <div class="titulo">
+            <a href="computadoras.html"><h3> Categoria : Computo </h3></a>
+            <img src="/imagenes/icono-2.png" alt=""></div>
+            
+        <div class="carousel-container">
+            <div class="carousel computo">
+                <div class="card active">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 1">
+                    <h2>Generico</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i5 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 2">
+                    <h2>Apple</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i5 13th 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Microsft</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i5 12th 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Microsfot</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i2 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Linux</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i9 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Generico</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i7 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Linux</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i18 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Microsfot</h2>
+                    <div class="text-container">
+                        <p>Computadora PC Intel i5 3.4GHZ Ram 16gb 1TB SSD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-1">
+                <button class="button" onclick="prevCard()">&#10094;</button>
+                <button class="button" onclick="nextCard()">&#10095;</button>
+            </div>
+        </div>
+       </section>
+       <!-- zona gamer -->
+       <section id="categorias-1">
+        <div class="titulo">
+            <a href="
+            "><h3> Categoria : Zona Gamer  </h3></a>
+        <img src="/imagenes/icono-3.png" alt=""></div>
+        <div class="carousel-container">
+            <div class="carousel zona-gamer">
+                <div class="card active">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 1">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 5 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 2">
+                    <h2>Republic of gamers</h2>
+                    <div class="text-container">
+                        <p>Rog Ally Lectora de discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Nintendo</h2>
+                    <div class="text-container">
+                        <p>Nintendo Switch lectora de discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 4 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 5 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 4 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 5 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Sony</h2>
+                    <div class="text-container">
+                        <p>Consola PlayStation 5 Slim Lectora de Discos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-1">
+                
+                <button class="button" onclick="prevCard()">&#10094;</button>
+                <button class="button" onclick="nextCard()">&#10095;</button>
+            </div>
+        </div>
+       </section>
+       <!-- laptops y notebooks-->
+       <section id="categorias-1" >
+        <div class="titulo"> 
+            <a href="/notebooks.html"><h3> Categoria : Laptops y Notebooks </h3></a>
+        <img src="/imagenes/icono-4.png" alt=""></div>
+        <div class="carousel-container">
+            <div class="carousel laptops">
+                <div class="card active">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 1">
+                    <h2>Hp</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 2">
+                    <h2>Dell</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Hp</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Hp</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Acer</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Asus</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Asus</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="discount-badge">25% dsc</div>
+                    <img src="https://via.placeholder.com/300" alt="Imagen 3">
+                    <h2>Dell</h2>
+                    <div class="text-container">
+                        <p>Laptop HP 15.6" Windows 11 Intel Core i5 8GB 512GB SSD 15-FD0048LA </p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-1">
+                <button class="button" onclick="prevCard()">&#10094;</button>
+                <button class="button" onclick="nextCard()">&#10095;</button>
+            </div>
+        </div>
+       </section>
+
+       <footer>
+        <div class="reclamaciones">
+            <div class="detalles">
+                <div class="item-detalles">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                    <h3>ENVIOS A TODO EL PERU</h3>
+                    <p>mas de 100 distritos</p>
+                </div>
+                <div class="item-detalles">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                    <h3>ATENCION AL CLIENTE </h3>
+                    <p>(074)684651</p>
+                </div>
+                <div class="item-detalles">
+                    <button></button>
+                </div>
+            </div>
+            <div class="contactanos">
+                <div class="header-contactanos">
+                    <span>CONTACTANOS...</span>
+                    <h3>Los mejores productos a los mejores precios </h3>
+                    <p> Somos un empresa en crecimiento que poco a poco estara por todo el peru , puedes contactarnos
+                         y ubicarnos en nuestra siguiente sede </p>
+                         <br>
+                         <hr>
+                         <br>
+                         <p>direccion predeterminada de google maps </p>
+                </div>
+                <div class="container-contactanos">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4712.905398997156!2d-79.793936737003!3d-6.6388391306088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1722015018646!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer-sections">
+                 <div class="logo">
+                <h3> INNOVATEC</h3>
+                <hr>
+              </div>
+            <div class="fila-wrappers">
+                
+
+                <div class="fila">
+                    <div class="header">
+                        <h3>Mi cuenta </h3>
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                        
+                    </div>
+                    <hr>
+                    <div class="contenido">
+                        <div class="div">Registrate</div>
+                        <div class="div">Inicia sesion</div>
+                        <div class="div">Sige tu pedido</div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="header">
+                        <h3>INNOVATEC</h3>
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </div>
+                    <hr>
+                    <div class="contenido">
+                        <div class="div">¿Quiene somos?</div>
+                        <div class="div">¿Nuestras tiendas?</div>
+                        <div class="div">Beneficios de INNOVATEC</div>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="header">
+                        <h3>Atencion al cliente</h3>
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </div>
+                    <hr>
+                    <div class="contenido">
+                        <div class="div">Servicio tecnico</div>
+                        <div class="div">Centro de ayuda</div>
+                        <div class="div">Terminos y condiciones</div>
+                        <div class="div">Devoluciones , cambios y garantia</div>
+                        <div class="div">Libro de reclamaciones</div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+           
+           <div class="fila-wrappers-footer">
+            <div class="redes">
+                <h4>Nuestras redes sociales</h4>
+                
+                <div class="sociales">
+                    
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+                <hr>
+            </div>
+            <div class="pagos">
+                <h4> Metodo de pago</h4>
+                <div class="tarjetas">
+                    <div class="cartas item-1">
+
+                    </div>
+                    <div class="cartas item-2">
+                        
+                    </div>
+                    <div class="cartas item-3">
+                        
+                    </div>
+                    <div class="cartas item-4">
+                        
+                    </div>
+                </div>
+            </div>
+
+           </div>
+          
+            
+            <div class="ultimo">
+                <p>Copyright &copy;2023 </p>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- boton flotante-->
+        <div class="menu-flotante">
+
+            <div class="opciones">
+                <div class="opcion">
+                    <span> web1 </span>
+                    <i class="bx bxl-telegram"></i>
+                </div>
+                <div class="opcion">
+                    <span> web1 </span>
+                    <i class="bx bxl-youtube"></i>
+                </div>
+                <div class="opcion">
+                    <span> web1 </span>
+                    <i class="bx bxl-facebook"></i>
+                </div>
+                <div class="opcion">
+                    <span> web1 </span>
+                    <i class="bx bxl-instagram"></i>
+                </div>
+                
+            </div>
+            <i class="bx bx-menu-alt-right"></i>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{  margin: 0;
+    padding: 0;
+    }
+    
+ 
+.filter-section {
+   
+    width: 100%;
+    padding: 6rem 0px 0px 0px;
+    justify-content: center;
+   
+  
+}
+.filter-section-1{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align:initial; 
+    justify-content: space-between;
+    display: flex;
+
+}
+.filter-section-1 h2{
+    font-size: clamp(4px, 2vw + 0.5rem,20px);
+
+}
+.filter-container-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 0px 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.filter-section-1 ion-icon {
+    align-items: self-end;
+    font-size: 35px;
+}
+.filter-container{
+    padding: 10px 40px;
+    display: none ;
+    
+}
+.filter-container.active {
+    display: block;
+   
+}
+.product-section {
+    width: 100%;
+    padding: 1rem;
+    margin: auto 0;
+    
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 10px;
+    width: 100%;
+   margin: 0 auto;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.product-item img {
+    max-width: 60%;
+    height: auto;
+}
+.product-item h3 , span,.p-p{
+    
+    text-align: justify;
+    padding: 0px 10px;
+}.product-item h3{
+    font-size: 15px;
+}
+.product-item p {
+    text-align: justify;
+    padding: 0px 10px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+    
+
+
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+   
+   
+}
+
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.filter-group {
+    margin: auto 0;
+   display: none ;
+   width: 100%;
+
+}
+
+.filter-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-group ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.product-item {
+    position: relative;
+    margin: auto 0;
+  
+
+    /* Otros estilos existentes */
+}
+
+ .product-item .discount {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+    border-bottom-right-radius: 5px;
+}
+
+.precio-descuento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  padding: 1px 0px;
+}
+
+
+.span-p {
+    gap: 1em;
+    display: flex;
+    flex-direction: row; /* Coloca los elementos internos en una columna */
+   
+  }
+  .span-p span {
+    color: red;
+  }
+  .precio-descuento p {
+    text-decoration: line-through;
+}
+.product-item button {
+
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(7, 105, 252);
+    color: white;
+}
+
+@media(min-width:720px){
+    .main-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px; /* Espacio entre las secciones */
+        padding: 40px;
+      }
+      
+      .product-section {
+        padding: 6rem 0px 0px 0px;
+        flex: 1; /* Toma el espacio restante */
+      }
+      
+      .filter-section {
+        width: 250px; /* O el ancho que prefieras para la sección de filtros */
+      }
+    .product-grid{
+        display: grid;
+        max-width: 1250px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      
+        gap: 20px;
+    }.product-item {
+        max-width: 380px;
+        min-height: 340px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }.product-item {
+        max-width: 300px;
+        min-height: 300px;
+    }
+    }
+
+@media (min-width: 1500px) {
+    .main-container {
+     
+        padding: 100px 80px;
+      }
+      
+    .product-grid {
+        max-width: 2000px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+

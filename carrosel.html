@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100vh;
+            width: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            transition: width 0.3s;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar:hover {
+            width: 250px;
+           
+        }
+
+        .sidebar .company-name {
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .sidebar .menu-items {
+            flex-grow: 1;
+            padding: 50PX 0PX;
+            
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 20px 15px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+            justify-content: center;
+           
+        }
+        .sidebar:hover a {
+            justify-content: flex-start;
+        }
+
+
+        .sidebar a:hover {
+            background-color: #3b3b3b;
+           
+        }
+
+        .sidebar a i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .sidebar a span {
+            display: none;
+        }
+
+        .sidebar:hover a span {
+            display: inline;
+           
+        }
+
+        .content {
+            margin-left: 60px;
+            padding: 20px;
+        }
+
+        .sidebar:hover .content {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#"><i class="fas fa-cog"></i><span> INNOVATEC</span></a>
+        <div class="menu-items">
+            <a href="/fondo.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+            <a href="#"><i class="fas fa-user"></i><span>Perfil</span></a>
+            <a href="#"><i class="fa-solid fa-bookmark"></i><span>Favoritos</span></a>
+            <a href="#"><i class="fa-solid fa-store"></i><span>Pedidos</span></a>
+            <a href="#"><i class="fas fa-home"></i><span>Atencion al cliente</span></a>
+            
+            <a href="#"><i class="fas fa-info-circle"></i><span>Información</span></a>
+        </div>
+        <a href="#"><i class="fas fa-cog"></i><span>Ajustes</span></a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i><span>Salir</span></a>
+    </div>
+
+    <div class="content">
+        <h1>Contenido Principal</h1>
+        <p>Este es el contenido principal de la página.</p>
+    </div>
+
+    <!-- Asegúrate de incluir Font Awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo 3D</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+    background: url('/imagenes/Fondo11.gif') no-repeat cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Agrega perspectiva para el efecto 3D */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotateY(20deg); /* Gira el contenido para un efecto 3D */
+    transform-style: preserve-3d;
+}
+
+h1, p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    </style>
+
+</head>
+<body>
+    <main class="main-content">
+        <section class="content">
+            <h1>Bienvenido a la Página</h1>
+            <p>Este es un ejemplo de fondo con efecto 3D.</p>
+        </section>
+    </main>
+</body>
+</html>
